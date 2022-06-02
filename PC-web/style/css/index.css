@@ -1,0 +1,596 @@
+body {
+  height: 2000px;
+}
+.wrap .header .top {
+  height: 30px;
+  background: #eaeaea;
+}
+.wrap .header .top .topMain {
+  width: 1200px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.wrap .header .top .topMain .left {
+  float: left;
+  height: 30px;
+}
+.wrap .header .top .topMain .left > h5 {
+  float: left;
+}
+.wrap .header .top .topMain .left > p {
+  float: left;
+  margin-left: 4px;
+}
+.wrap .header .top .topMain .left > p .login {
+  border-left: 1px solid #b3aeae;
+  padding-left: 4px;
+}
+.wrap .header .top .topMain .right {
+  float: right;
+  height: 30px;
+  font-size: 0;
+}
+.wrap .header .top .topMain .right > a {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.wrap .header .top .topMain .right > a + a {
+  border-left: 1px solid #b3aeae;
+}
+.wrap .header .bottom .bottomMain {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.wrap .header .bottom .bottomMain::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .header .bottom .bottomMain > h1 {
+  float: left;
+  width: 175px;
+  height: 56px;
+  margin: 25px 45px;
+}
+.wrap .header .bottom .bottomMain .search {
+  float: right;
+  margin-top: 35px;
+}
+.wrap .header .bottom .bottomMain .search > input {
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0 4px;
+  border: 3px solid #ea4a36;
+  outline: none;
+}
+.wrap .header .bottom .bottomMain .search > button {
+  width: 68px;
+  height: 32px;
+  background: #ea4a36;
+  color: #fff;
+  border: none;
+  float: right;
+}
+.wrap .navWrap {
+  border-bottom: 2px solid #e1251b;
+}
+.wrap .navWrap .navMain {
+  width: 1200px;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.wrap .navWrap .navMain::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .navWrap .navMain > h3 {
+  float: left;
+  width: 210px;
+  height: 50px;
+  background: #e1251b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.wrap .navWrap .navMain > div {
+  float: left;
+  height: 50px;
+}
+.wrap .navWrap .navMain > div > a {
+  margin: 0 22px;
+  font-size: 16px;
+  color: #333;
+}
+.wrap .mainCon {
+  width: 1200px;
+  margin: 15px auto 0;
+}
+.wrap .mainCon .conPoin {
+  padding: 9px 0 9px 15px;
+}
+.wrap .mainCon .conPoin i {
+  margin: 0 4px;
+}
+.wrap .mainCon .infoWrap {
+  margin: 5px 0 15px;
+  *zoom: 1;
+}
+.wrap .mainCon .infoWrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .infoWrap .prevViewWrap {
+  float: left;
+  width: 400px;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .prevView {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #dfdfdf;
+  position: relative;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .prevView .zoomImgBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .prevView .zoomImgBox .mask {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .prevView .bigImgBox {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 420px;
+  top: 0;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .prevView .bigImgBox img {
+  width: 800px;
+  height: 800px;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail {
+  width: 100%;
+  margin-top: 5px;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail > a {
+  width: 10px;
+  height: 54px;
+  text-align: center;
+  line-height: 54px;
+  border: 1px solid #ccc;
+  background: #EBEBEB;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail > a.prev {
+  float: left;
+  margin-right: 4px;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail > a.next {
+  float: right;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail .list {
+  width: 372px;
+  height: 56px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail .list ul {
+  width: 9999px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  *zoom: 1;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail .list ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail .list ul li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  padding: 2px;
+}
+.wrap .mainCon .infoWrap .prevViewWrap .thumbnail .list ul li > img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .mainCon .infoWrap .info {
+  float: right;
+  width: 700px;
+}
+.wrap .mainCon .infoWrap .info > h3 {
+  line-height: 21px;
+  margin-top: 15px;
+}
+.wrap .mainCon .infoWrap .info > p {
+  color: #e12228;
+  margin-top: 15px;
+}
+.wrap .mainCon .infoWrap .info .priceArea {
+  background: #fee9ec;
+  padding: 7px;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div {
+  *zoom: 1;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div > p {
+  float: left;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div > p.title {
+  margin-right: 15px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceTop > p.price {
+  color: #cc1122;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceTop > p.price > i {
+  font-size: 16px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceTop > p.price > em {
+  font-size: 24px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceTop > p.price > span {
+  font-size: 12px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceTop > p.remark {
+  float: right;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceBottom {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceBottom > p.text {
+  width: 520px;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceBottom > p.text > i {
+  background: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+.wrap .mainCon .infoWrap .info .priceArea > div.priceBottom > p.text > span {
+  color: #999;
+}
+.wrap .mainCon .infoWrap .info .support {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.wrap .mainCon .infoWrap .info .support > div {
+  *zoom: 1;
+  margin-top: 10px;
+  line-height: 28px;
+}
+.wrap .mainCon .infoWrap .info .support > div::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .infoWrap .info .support > div > p {
+  float: left;
+}
+.wrap .mainCon .infoWrap .info .support > div > p > span {
+  display: inline-block;
+  width: 0.5em;
+}
+.wrap .mainCon .infoWrap .info .support > div > p > i {
+  display: inline-block;
+  width: 2em;
+}
+.wrap .mainCon .infoWrap .info .support > div > p.title {
+  margin-right: 15px;
+}
+.wrap .mainCon .infoWrap .info .support > div > p.text {
+  width: 520px;
+  color: #999;
+}
+.wrap .mainCon .infoWrap .info .choose {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.wrap .mainCon .infoWrap .info .choose .choosed > mark {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  margin-right: 20px;
+  background: snow;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.wrap .mainCon .infoWrap .info .choose .choosed > mark > a {
+  margin-left: 20px;
+  color: red;
+}
+.wrap .mainCon .infoWrap .info .choose .chooseArea > dl {
+  margin: 13px 0;
+  *zoom: 1;
+}
+.wrap .mainCon .infoWrap .info .choose .chooseArea > dl::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .infoWrap .info .choose .chooseArea > dl > dt {
+  float: left;
+  margin-right: 15px;
+}
+.wrap .mainCon .infoWrap .info .choose .chooseArea > dl > dd {
+  float: left;
+  padding: 2px 14px;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.wrap .mainCon .infoWrap .info .choose .chooseArea > dl > dd:nth-of-type(1) {
+  color: red;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar {
+  *zoom: 1;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar .control {
+  float: left;
+  width: 55px;
+  margin-right: 15px;
+  position: relative;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar .control > input {
+  width: 38px;
+  height: 37px;
+  border: 1px solid #ddd;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar .control > a {
+  position: absolute;
+  width: 15px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  color: #666;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  right: 1px;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar .control > a.plus {
+  top: 0;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar .control > a.minus {
+  top: 19px;
+}
+.wrap .mainCon .infoWrap .info .choose .addCar > button {
+  float: left;
+  padding: 0 25px;
+  height: 36px;
+  line-height: 36px;
+  background: #e1251b;
+  color: #fff;
+  border: none;
+}
+.wrap .mainCon .detail {
+  margin-top: 30px;
+  *zoom: 1;
+}
+.wrap .mainCon .detail::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .detail > aside {
+  float: left;
+  width: 210px;
+  border: 1px solid #ccc;
+}
+.wrap .mainCon .detail > aside .tabBtns {
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .mainCon .detail > aside .tabBtns > h4 {
+  width: 105px;
+  height: 40px;
+  text-align: center;
+  line-height: 37px;
+  float: left;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+.wrap .mainCon .detail > aside .tabBtns > h4.active {
+  border-top: 3px solid #e1251b;
+}
+.wrap .mainCon .detail > aside .tabContents {
+  padding: 10px;
+}
+.wrap .mainCon .detail > aside .tabContents > div {
+  display: none;
+}
+.wrap .mainCon .detail > aside .tabContents > div.active {
+  display: block;
+}
+.wrap .mainCon .detail > aside .tabContents > div .partList {
+  *zoom: 1;
+}
+.wrap .mainCon .detail > aside .tabContents > div .partList::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .detail > aside .tabContents > div .partList > li {
+  float: left;
+  width: 50%;
+  border-bottom: 1px dashed #ededed;
+  line-height: 28px;
+}
+.wrap .mainCon .detail > aside .tabContents > div .goodsList > li {
+  margin: 5px 0 15px;
+  border-bottom: 1px solid #ededed;
+}
+.wrap .mainCon .detail > aside .tabContents > div .goodsList > li .imgBox {
+  text-align: center;
+}
+.wrap .mainCon .detail > aside .tabContents > div .goodsList > li .imgBox > img {
+  width: 152px;
+}
+.wrap .mainCon .detail > aside .tabContents > div .goodsList > li .partPrice {
+  font-size: 16px;
+  color: #c81623;
+}
+.wrap .mainCon .detail > aside .tabContents > div .goodsList > li .addCar {
+  text-align: center;
+  margin: 5px 0;
+  padding-bottom: 5px;
+}
+.wrap .mainCon .detail > aside .tabContents > div .goodsList > li .addCar > a {
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+  padding: 2px 14px;
+}
+.wrap .mainCon .detail .detailWrap {
+  width: 980px;
+  float: right;
+}
+.wrap .mainCon .detail .detailWrap .fitting {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.wrap .mainCon .detail .detailWrap .fitting > h4 {
+  padding: 5px 0 5px 15px;
+  background: #f1f1f1;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods {
+  height: 170px;
+  padding-top: 10px;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .master {
+  float: left;
+  width: 127px;
+  height: 165px;
+  text-align: center;
+  position: relative;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .master > img {
+  width: 87px;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .master > p {
+  font-size: 16px;
+  color: #c81623;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .master > i {
+  font-size: 16px;
+  position: absolute;
+  top: 48px;
+  right: -25px;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .list {
+  width: 668px;
+  height: 165px;
+  float: left;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .list > li {
+  float: left;
+  width: 127px;
+  margin: 0 20px;
+  text-align: center;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .list > li > img {
+  width: 120px;
+  height: 130px;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .result {
+  float: left;
+  width: 153px;
+  height: 165px;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .result > div {
+  margin: 10px 0;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .result > h4 {
+  margin-bottom: 10px;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .result > p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #B1191A;
+}
+.wrap .mainCon .detail .detailWrap .fitting .goods .result > button {
+  padding: 10px 25px;
+  background: #e1251b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabBtns {
+  background: #ededed;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  *zoom: 1;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabBtns::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabBtns > li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 11px;
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabBtns > li.active {
+  background: #e1251b;
+  color: #fff;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabContents > div {
+  display: none;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabContents > div.active {
+  display: block;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabContents > div > ul {
+  padding-left: 10px;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabContents > div > ul > li {
+  margin: 10px 0;
+}
+.wrap .mainCon .detail .detailWrap .intro .tabContents > div > img {
+  display: block;
+}
+/*# sourceMappingURL=./index.css.map */
