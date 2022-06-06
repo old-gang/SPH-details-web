@@ -508,5 +508,35 @@ window.onload = function () {
 
 
     }
+    //  购物车侧边栏
+    tool();
+    function tool() {
+
+        //  获取父元素
+        var toolBar = document.querySelector('.wrap .toolBar');
+        //  获取按钮
+        var toolBtn = document.querySelector('.wrap .toolBar .toolBtn');
+
+        //  标志位
+        //  true  对应收起    父级类名为 toolIn  按钮类名为list
+        //  false 对应展开    父级类名为 toolOut  按钮类名为cross
+        var flag = true;
+
+        toolBtn.onclick = function () {
+
+            if (flag) {
+                //  只要能够进入这个if当中 则说明当前的状态为收起
+                //  我们点击时为收起 所以当这次点击之后 我们要切换到展开的状态
+                toolBar.className = 'toolBar toolOut';
+                toolBtn.className = 'toolBtn cross';
+            } else {
+                toolBar.className = 'toolBar toolIn';
+                toolBtn.className = 'toolBtn list';
+            }
+            flag = !flag;
+
+        }
+
+    }
 
 }

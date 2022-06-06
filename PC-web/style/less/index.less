@@ -1,8 +1,99 @@
-body {
-    height: 2000px;
-}
+// body {
+//     height: 2000px;
+// }
 
 .wrap {
+
+    // 侧边栏
+    .toolBar {
+        width: 300px;
+        height: 100%;
+        background: #7a6e6e;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: .5s;
+
+        // 带这个类名展开
+        &.toolOut {
+            right: 0px;
+        }
+
+        // 带这个类名收起
+        &.toolIn {
+            right: -294px;
+        }
+
+        .content {
+            width: 294px;
+            height: 100%;
+            position: absolute;
+            left: 6px;
+            top: 0;
+            background: bisque;
+            z-index: 3;
+        }
+
+        .toolBtn {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            left: -29px;
+            cursor: pointer;
+
+            &.cross {
+                background: #7a6e6e url(./../../images/cross.png);
+                background-size: cover;
+            }
+
+            &.list {
+                background: #7a6e6e url(../../images/list.png);
+                background-size: cover;
+            }
+        }
+
+        .toolList {
+            position: absolute;
+            left: -29px;
+            top: 50%;
+            margin-top: -105px;
+
+            >li {
+                width: 35px;
+                height: 35px;
+                position: relative;
+
+                >p {
+                    width: 100%;
+                    height: 100%;
+                    background: #7a6e6e url(../../images/toolbars.png) -87px -174px;
+                    transition: left 0.3s ease-in-out;
+                }
+
+                >i {
+                    width: 62px;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    background: pink;
+                    color: #fff;
+                    position: absolute;
+                    left: 35px;
+                    top: 0;
+                    transition: left 0.3s ease-in-out;
+                }
+
+                &:hover p {
+                    background-color: pink;
+                }
+
+                &:hover i {
+                    left: -62px;
+                }
+            }
+
+        }
+    }
 
     // 头部区域
     .header {
@@ -367,7 +458,7 @@ body {
                     margin-top: 10px;
                     line-height: 28px;
 
-                    .choosed {
+                    .chose {
                         >mark {
                             display: inline-block;
                             height: 30px;
